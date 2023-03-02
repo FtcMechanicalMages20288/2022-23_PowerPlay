@@ -234,14 +234,6 @@ public class LeftAuto extends LinearOpMode
                 .addTemporalMarker(() -> UpCone())
                 .waitSeconds(0.5)
                 .back(7)
-                .turn(Math.toRadians(110))
-                .addTemporalMarker(() -> ClawUp())
-                .forward(4.5)
-                .waitSeconds(0.1)
-                .addTemporalMarker(() -> ClawDrop())
-                .back(5)
-                .turn(Math.toRadians(-30))
-                .strafeRight(10)
                 .build();
 
         TrajectorySequence Zone3 = drive.trajectorySequenceBuilder(Cyclep2.end())
